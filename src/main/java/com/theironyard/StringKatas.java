@@ -37,6 +37,9 @@ public class StringKatas {
      * @return A string greeting the name. EG: "Hello Bob!"
      */
     // todo: implement helloName() method
+	public static String helloName(String name){
+		return "Hello "+name+"!";
+	}
 
     /**
      * Create a publicly accessible static method that does the following:
@@ -61,6 +64,9 @@ public class StringKatas {
      * @return A string with the word `word` placed in the middle of the `out` argument
      */
     // todo: implement makeOutWord() method
+	public static String makeOutWord(String out,String word){
+		return out.substring(0,2)+word+out.substring(2,4);
+	}
 
     /**
      * Create a publicly accessible static method that does the following:
@@ -78,6 +84,9 @@ public class StringKatas {
      * @return The first half of the string provided
      */
     // todo: implement firstHalf() method
+	public static String firstHalf(String str){
+		return str.substring(0,str.length()/2);
+	}
 
     /**
      * Create a publicly accessible static method that does the following:
@@ -105,5 +114,9 @@ public class StringKatas {
      * @return A string made up of the first n and last n characters of `str` concatenated together
      */
     // todo: implement nTwice() method
+	public static String nTwice(String str,int n){
+
+		return str.substring(0,n)+str.substring(str.length()-n);
+	}
 
 }
